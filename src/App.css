@@ -1,38 +1,58 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: "Roubik-regular";
+  src: url("./assets/fonts/Rubik/Rubik-Regular.ttf");
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: "Roubik-light";
+  src: url("./assets/fonts/Rubik/Rubik-Light.ttf");
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@font-face {
+  font-family: "Roubik-medium";
+  src: url("./assets/fonts/Rubik/Rubik-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Roubik-bold";
+  src: url("./assets/fonts/Rubik/Rubik-Bold.ttf");
+}
+
+.bg-uniq {
+  background: #ffffff;
+}
+
+.uniq-shadow {
+  box-shadow: 0px 2px 5px 0px rgba(59, 55, 55, 0.63);
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(59, 55, 55, 0.63);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(59, 55, 55, 0.63);
+}
+
+@media (min-width: 992px) {
+  .main-section {
+    width: 100%;
+    padding-left: 310px;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.flex-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.flex-column {
+  -ms-flex-direction: column !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+  flex-direction: column !important;
 }
