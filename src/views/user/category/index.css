@@ -158,6 +158,17 @@
 
 /* End Mobile Category Menu */
 
+/* Fixed Side Menu */
+.fixed_side_menu_bar{
+    position: fixed;
+    top: 72px;
+    z-index: 10;
+}
+.fixed_main_section{
+    margin-left: 280px;
+}
+/* End Fixed Side Menu */
+
 @media(min-width: 768px) {
     .category_product .category_product_header {
         height: 200px;

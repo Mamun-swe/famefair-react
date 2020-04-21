@@ -7,18 +7,21 @@ import NavBar from '../../../components/product_nav/index'
 
 import product_image_1 from '../../../assets/products/8.png'
 
+let scrollAmount = 0;
+
 class Category extends Component {
     constructor(props) {
         super(props);
         this.state = {
             posts: []
         }
+        window.addEventListener('scroll', this.handleScroll, true);
         this.mobileCategoryToggle = this.mobileCategoryToggle.bind(this)
         this.mobilePriceFilter = this.mobilePriceFilter.bind(this)
     }
 
     componentDidMount() {
-        axios.get('https://jsonplaceholder.typicode.com/users')
+        axios.get('https://jsonplaceholder.typicode.com/posts')
             .then(response => {
                 this.setState({ posts: response.data })
             })
@@ -28,11 +31,22 @@ class Category extends Component {
         $('.mobile_category_list')
     }
 
-    mobileCategoryToggle(){
+    handleScroll = () => {
+        scrollAmount = window.scrollY;
+        if (scrollAmount >= 200) {
+            $('.side_menu_section').addClass("fixed_side_menu_bar")
+            $('.main_section').addClass("fixed_main_section")
+        } else {
+            $('.side_menu_section').removeClass("fixed_side_menu_bar")
+            $('.main_section').removeClass("fixed_main_section")
+        }
+    }
+
+    mobileCategoryToggle() {
         $(this.refs['mobile_category_list']).slideToggle()
     }
 
-    mobilePriceFilter(){
+    mobilePriceFilter() {
         $(this.refs['mobile_filter_range']).slideToggle()
     }
 
