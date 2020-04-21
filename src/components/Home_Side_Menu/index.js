@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import "./index.css";
 import $ from 'jquery'
 import logo from '../../assets/static/logo.png'
+import { Link } from 'react-router-dom';
 let scrollAmount = 0;
 
 class sideMenu extends Component {
@@ -28,15 +29,15 @@ class sideMenu extends Component {
                 <div className="side-menu d-none d-lg-block">
                     <div className="menu-option bg-uniq uniq-shadow py-4 px-3">
                         <div className="text-center mb-4">
-                            <img src={logo} className="img-fluid" alt="logo" />
+                            <img src={logo} className="img-fluid" alt="Logo" />
                         </div>
                         <div className="user-section mb-4 text-center">
-                            <a href="#">
+                            <Link to="/">
                                 <i className="fa fa-user"></i>
-                            </a>
-                            <a href="#">
+                            </Link>
+                            <Link to="/">
                                 <i className="fas fa-shopping-cart"></i>
-                            </a>
+                            </Link>
                         </div>
                         <div className="search-box">
                             <form>
@@ -55,14 +56,14 @@ class sideMenu extends Component {
                             </form>
                         </div>
                         <div className="links text-center">
-                            <a href="#">home</a>
+                            <Link to="/">home</Link>
                             <div>
-                                <a href="#">chair</a>
-                                <a href="#">accessories</a>
-                                <a href="#">cloths</a>
-                                <a href="#">women</a>
-                                <a href="#">men</a>
-                                <a href="#">food</a>
+                                <Link to="/">chair</Link>
+                                <Link to="/">accessories</Link>
+                                <Link to="/">cloths</Link>
+                                <Link to="/">women</Link>
+                                <Link to="/">men</Link>
+                                <Link to="/">food</Link>
                             </div>
                         </div>
                     </div>
@@ -78,9 +79,9 @@ class sideMenu extends Component {
                                 <i className="fas fa-bars"></i>
                             </div>
                             <div>
-                                <a href="#">
-                                    <img src={logo} className="img-fluid" />
-                                </a>
+                                <Link to="/">
+                                    <img src={logo} className="img-fluid" alt="Logo" />
+                                </Link>
                             </div>
                             <div>
                                 <i className="far fa-user"></i>
@@ -126,20 +127,20 @@ class sideMenu extends Component {
                                 </form>
                             </div>
                             <div className="links">
-                                <a href="#">home</a>
+                                <Link to="/">home</Link>
                                 <div>
-                                    <a href="#">chair</a>
-                                    <a href="#">accessories</a>
-                                    <a href="#">cloths</a>
-                                    <a href="#">women</a>
-                                    <a href="#">men</a>
-                                    <a href="#">food</a>
+                                    <Link to="/">chair</Link>
+                                    <Link to="/">accessories</Link>
+                                    <Link to="/">cloths</Link>
+                                    <Link to="/">women</Link>
+                                    <Link to="/">men</Link>
+                                    <Link to="/">food</Link>
                                 </div>
                             </div>
                             <br />
                             <br />
                             <div className="links">
-                                <a href="#">Login / Register</a>
+                                <Link to="/">Login / Register</Link>
                             </div>
                         </div>
                     </div>

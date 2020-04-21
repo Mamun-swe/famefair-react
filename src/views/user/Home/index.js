@@ -48,13 +48,13 @@ class mainSection extends Component {
                     <div className="header-slider">
                         <Slider ref={c => (this.slider = c)} {...settings}>
                             <div>
-                                <img src={slider1} className="img-fluid w-100" alt="slider" />
+                                <img src={slider1} className="img-fluid w-100" alt="Slider" />
                             </div>
                             <div>
-                                <img src={slider2} className="img-fluid w-100" alt="slider" />
+                                <img src={slider2} className="img-fluid w-100" alt="Slider" />
                             </div>
                             <div>
-                                <img src={slider3} className="img-fluid w-100" alt="slider" />
+                                <img src={slider3} className="img-fluid w-100" alt="Slider" />
                             </div>
                         </Slider>
                         <div className="buttons d-none d-lg-block">
@@ -79,42 +79,42 @@ class mainSection extends Component {
 
                                 <div className="card text-center border rounded-0">
                                     <div className="card-body">
-                                        <img src={Category1} className="img-fluid mb-2" />
+                                        <img src={Category1} className="img-fluid mb-2" alt="Category product" />
                                         <p className="mb-0 text-capitalize font-weight-bold">chair & tables</p>
                                     </div>
                                 </div>
 
                                 <div className="card text-center border rounded-0">
                                     <div className="card-body">
-                                        <img src={Category2} className="img-fluid mb-2" />
+                                        <img src={Category2} className="img-fluid mb-2" alt="Category product" />
                                         <p className="mb-0 text-capitalize font-weight-bold">chair & tables</p>
                                     </div>
                                 </div>
 
                                 <div className="card text-center border rounded-0">
                                     <div className="card-body">
-                                        <img src={Category3} className="img-fluid mb-2" />
+                                        <img src={Category3} className="img-fluid mb-2" alt="Category product" />
                                         <p className="mb-0 text-capitalize font-weight-bold">chair & tables</p>
                                     </div>
                                 </div>
 
                                 <div className="card text-center border rounded-0">
                                     <div className="card-body">
-                                        <img src={Category2} className="img-fluid mb-2" />
+                                        <img src={Category2} className="img-fluid mb-2" alt="Category product" />
                                         <p className="mb-0 text-capitalize font-weight-bold">chair & tables</p>
                                     </div>
                                 </div>
 
                                 <div className="card text-center border rounded-0">
                                     <div className="card-body">
-                                        <img src={Category1} className="img-fluid mb-2" />
+                                        <img src={Category1} className="img-fluid mb-2" alt="Category product" />
                                         <p className="mb-0 text-capitalize font-weight-bold">chair & tables</p>
                                     </div>
                                 </div>
 
                                 <div className="card text-center border rounded-0">
                                     <div className="card-body">
-                                        <img src={Category3} className="img-fluid mb-2" />
+                                        <img src={Category3} className="img-fluid mb-2" alt="Category product" />
                                         <p className="mb-0 text-capitalize font-weight-bold">chair & tables</p>
                                     </div>
                                 </div>
@@ -130,7 +130,7 @@ class mainSection extends Component {
                     <div className="container-fluid">
                         <div className="row">
                             <div className="col-12 px-2 pl-lg-0 pr-lg-3">
-                                <img src={Offer} className="img-fluid w-100" alt="Offer Image" />
+                                <img src={Offer} className="img-fluid w-100" alt="Offer" />
                             </div>
                         </div>
                     </div>
