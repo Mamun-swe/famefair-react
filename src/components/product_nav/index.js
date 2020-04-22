@@ -55,7 +55,7 @@ class ProductNav extends Component {
                                     <div className="mt-1 accounts">
                                         <ul className="d-none d-lg-block">
                                             <li>
-                                                <Link to="/">
+                                                <Link to="/cart">
                                                     <i className="fas fa-shopping-cart"></i>
                                                 </Link>
                                             </li>

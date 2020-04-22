@@ -35,7 +35,7 @@ class sideMenu extends Component {
                             <Link to="/">
                                 <i className="fa fa-user"></i>
                             </Link>
-                            <Link to="/">
+                            <Link to="/cart">
                                 <i className="fas fa-shopping-cart"></i>
                             </Link>
                         </div>

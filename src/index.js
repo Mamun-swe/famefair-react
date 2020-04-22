@@ -8,6 +8,8 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import App from './App';
 import Category from './views/user/category/index';
+import Cart from './views/user/cart/index';
+
 import NotFound from './views/pageNotFound/index';
 
 const routing = (
@@ -15,6 +17,7 @@ const routing = (
     <Switch>
       <Route exact path="/" component={App} />
       <Route path="/category/:categoryName" component={Category} />
+      <Route path="/cart" component={Cart} />
       <Route component={NotFound} />
     </Switch>
   </Router>
