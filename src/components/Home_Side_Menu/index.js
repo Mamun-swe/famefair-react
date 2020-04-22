@@ -14,9 +14,9 @@ class sideMenu extends Component {
     handleScroll = () => {
         scrollAmount = window.scrollY;
         if (scrollAmount > 50) {
-            $('.search-bar').addClass("mobileSticky")
+            $('.mobile_top_search_bar').addClass("mobileSticky")
         } else {
-            $('.search-bar').removeClass("mobileSticky")
+            $('.mobile_top_search_bar').removeClass("mobileSticky")
         }
     }
 
@@ -89,7 +89,7 @@ class sideMenu extends Component {
                         </div>
                     </div>
                     {/* Search Bar */}
-                    <div className="search-bar p-3">
+                    <div className="search-bar mobile_top_search_bar p-3">
                         <form>
                             <div className="input-group">
                                 <input
