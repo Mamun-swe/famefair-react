@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './index.css';
 import Table from 'react-bootstrap/Table'
 import Navbar from '../../../components/product_nav/index';
 import Image from '../../../assets/products/10.png'
+
 
 class Cart extends Component {
     constructor(props) {
@@ -99,10 +101,20 @@ class Cart extends Component {
                                                 <button className="btn btn-light text-danger btn-sm rounded-0 shadow-none"><i className="fas fa-times"></i></button>
                                             </td>
                                         </tr>
-
-
                                     </tbody>
                                 </Table>
+                            </div>
+                            <div className="col-12">
+                                <div className="card rounded-0 border-0 shadow-none text-right">
+                                    <div className="card-body pt-0">
+                                        <div className="mb-3">
+                                            <h6>Total: 500 Tk</h6>
+                                        </div>
+                                        <div>
+                                            <Link to="/checkout" className="btn px-4 px-md-5 shadow-none rounded-0">proceed to checkout</Link>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -32,7 +32,7 @@ class sideMenu extends Component {
                             <img src={logo} className="img-fluid" alt="Logo" />
                         </div>
                         <div className="user-section mb-4 text-center">
-                            <Link to="/">
+                            <Link to="/account">
                                 <i className="fa fa-user"></i>
                             </Link>
                             <Link to="/cart">

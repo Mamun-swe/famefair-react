@@ -60,7 +60,7 @@ class ProductNav extends Component {
                                                 </Link>
                                             </li>
                                             <li>
-                                                <Link to="/">
+                                                <Link to="/account">
                                                     <i className="fas fa-user"></i>
                                                 </Link>
                                             </li>
