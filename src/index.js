@@ -10,8 +10,9 @@ import App from './App';
 import Category from './views/user/category/index';
 import Cart from './views/user/cart/index';
 import Checkout from './views/user/checkout/index';
-import Account from './views/user/account/index';
-
+import Account from './views/user/account/account_master';
+import OrderHistory from './views/user/account/order_history/index';
+import Me from './views/user/account/me/index';
 import NotFound from './views/pageNotFound/index';
 
 const routing = (
@@ -22,6 +23,8 @@ const routing = (
       <Route path="/cart" component={Cart} />
       <Route path="/checkout" component={Checkout} />
       <Route path="/account" component={Account} />
+      <Route path="/account/" component={OrderHistory} />
+      <Route path="/account/me" component={Me} />
       <Route component={NotFound} />
     </Switch>
   </Router>

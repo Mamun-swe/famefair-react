@@ -1,0 +1,14 @@
+.links-btns {
+    margin-top: 20px;
+}
+
+.links-btns .btn{
+    color: #720655;
+    font-family: "Roubik-regular";
+}
+
+@media(min-width: 992px) {
+    .links-btns {
+        margin-top: 100px;
+    }
+}

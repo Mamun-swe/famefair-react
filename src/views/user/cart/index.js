@@ -41,10 +41,8 @@ class Cart extends Component {
                                             <td>
                                                 <div className="d-flex">
                                                     <div><img src={Image} alt="product" /></div>
-                                                    <div className="pl-3 pt-2">
-                                                        <p className="mb-0">Reference site about Lorem Ipsum, giving information on its origins,
-                                                        as well as a random Lipsum generator. Reference site about Lorem Ipsum, giving information on its origins,
-                                                          as well as a random Lipsum generator.</p>
+                                                    <div className="pl-3 pt-3 pt-md-5">
+                                                        <p className="mb-0">KTM RC 125</p>
                                                     </div>
                                                 </div>
                                             </td>
@@ -73,10 +71,8 @@ class Cart extends Component {
                                             <td>
                                                 <div className="d-flex">
                                                     <div><img src={Image} alt="product" /></div>
-                                                    <div className="pl-3 pt-2">
-                                                        <p className="mb-0">Reference site about Lorem Ipsum, giving information on its origins,
-                                                        as well as a random Lipsum generator. Reference site about Lorem Ipsum, giving information on its origins,
-                                                          as well as a random Lipsum generator.</p>
+                                                    <div className="pl-3 pt-3 pt-md-5">
+                                                        <p className="mb-0">KTM RC 125</p>
                                                     </div>
                                                 </div>
                                             </td>
