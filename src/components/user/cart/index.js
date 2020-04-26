@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './index.css';
 import Table from 'react-bootstrap/Table'
-import Navbar from '../../../components/product_nav/index';
+import Navbar from '../../product_nav/index';
 import Image from '../../../assets/products/10.png'
 
 

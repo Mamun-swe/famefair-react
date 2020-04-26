@@ -1,0 +1,14 @@
+/* Banner Index */
+
+.banner_index thead {
+    font-size: 14px;
+    font-family: "Roubik-medium";
+}
+
+.banner_index tbody {
+    font-size: 13px;
+}
+
+.banner_index img {
+    width: 140px;
+}

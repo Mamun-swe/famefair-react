@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import axios from 'axios'
 import $ from 'jquery'
 import './index.css'
-import NavBar from '../../../components/product_nav/index'
+import NavBar from '../../product_nav/index'
 
 import product_image_1 from '../../../assets/products/8.png'
 

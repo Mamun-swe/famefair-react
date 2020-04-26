@@ -1,0 +1,97 @@
+.admin-master {
+    font-family: "Roubik-regular";
+}
+
+.admin-master .btn-uniq {
+    color: #fff;
+    background: #720655;
+    font-size: 14px;
+    font-family: "Roubik-medium";
+}
+
+/* Top Bar */
+
+.admin-master .top_bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 9;
+}
+
+.admin-master .top_bar .logo_img {
+    height: 40px;
+}
+
+.admin-master .top_bar .message_btn {
+    position: relative;
+}
+
+.admin-master .top_bar .message_count {
+    position: absolute;
+    top: 0px;
+    left: 23px;
+    color: brown;
+    font-size: 13px;
+    font-family: "Roubik-bold";
+}
+
+.admin-master .top_bar .user_img {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+/* Main Menu */
+
+.admin-master .main_menu {
+    overflow-x: hidden;
+}
+
+/* Side Bar */
+
+.admin-master .side_bar {
+    width: 250px;
+    height: 100vh;
+    padding-top: 80px;
+    background: #fff;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 8;
+    transition: 0.5s;
+}
+
+.admin-master .side_bar a {
+    font-size: 14px;
+    display: block;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 15px;
+    text-transform: capitalize;
+    font-family: "Roubik-regular";
+    color: #868686;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.admin-master .side_bar a:hover {
+    color: #fff;
+    background: #720655;
+}
+
+/* Main Section */
+
+.admin-master .main_section {
+    padding-top: 85px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    /* background: #e8f0f27c; */
+    margin-left: 250px;
+    transition: 0.5s;
+}

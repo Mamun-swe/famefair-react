@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './index.css';
 import Table from 'react-bootstrap/Table'
 import Image from '../../../../assets/products/5.png'
 
@@ -11,7 +10,7 @@ class UserAccount extends Component {
     }
     render() {
         return (
-            <div className="account">
+            <div className="history">
                 <div className="container py-3 py-lg-4">
                     <div className="row">
                         <div className="col-12 mb-4">
@@ -31,6 +30,14 @@ class UserAccount extends Component {
                                 </tr>
                             </thead>
                             <tbody>
+                                <tr>
+                                    <td><img src={Image} alt="product" /></td>
+                                    <td className="text-center text">Mark</td>
+                                    <td className="text-center text">Otto</td>
+                                    <td className="text-center text">mdo</td>
+                                    <td className="text-center text">mdo</td>
+                                    <td className="text-center text">mdo</td>
+                                </tr>
                                 <tr>
                                     <td><img src={Image} alt="product" /></td>
                                     <td className="text-center text">Mark</td>

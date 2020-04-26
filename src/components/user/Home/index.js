@@ -4,7 +4,9 @@ import './index.css'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import Product from '../Product/index.js'
+
+import SideMenu from '../../Home_Side_Menu/index';
+import Product from '../Product/index'
 
 import slider1 from '../../../assets/sliders/slider1.png'
 import slider2 from '../../../assets/sliders/slider2.png'
@@ -42,7 +44,10 @@ class mainSection extends Component {
             slidesToScroll: 1
         };
         return (
+
             <div className="main-section">
+                {/* Side Menu Bar */}
+                <SideMenu />
                 {/* Slider */}
                 <div className="header">
                     <div className="header-slider">

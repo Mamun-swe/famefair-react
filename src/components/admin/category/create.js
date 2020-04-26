@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
-import './index.css';
+import './style.css';
 
-class Me extends Component {
+class Create extends Component {
     constructor(props) {
         super(props);
         this.state = {  }
     }
     render() { 
         return ( 
-            <div className="me">
-                <h1>Me</h1>
+            <div>
+                <h1>Category create</h1>
             </div>
          );
     }
 }
  
-export default Me;
+export default Create;

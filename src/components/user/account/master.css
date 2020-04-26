@@ -1,0 +1,111 @@
+.links_button .btn {
+    border: 0;
+    color: #720655;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #fff;
+    font-family: "Roubik-medium";
+}
+
+/* History */
+
+.history .header h5 {
+    font-family: "Roubik-medium";
+}
+
+.history .header .btn {
+    color: #720655;
+    background: #fff;
+    font-family: "Roubik-regular";
+}
+
+.history thead tr td {
+    font-size: 13px;
+    font-family: "Roubik-medium";
+}
+
+.history tbody tr td {
+    font-size: 13px;
+    border-bottom: 1px solid #dfdfdf8e;
+    font-family: "Roubik-regular";
+}
+
+.history tbody tr .text {
+    padding-top: 26px;
+}
+
+.history tbody tr td img {
+    width: 50px;
+    height: 50px;
+}
+
+.history .load_more_btn {
+    color: #720655;
+    background: #fff;
+    font-family: "Roubik-regular";
+}
+
+/* Me */
+
+.me form small {
+    color: #000;
+    font-size: 12px;
+    font-family: "Roubik-light";
+    text-transform: uppercase;
+}
+
+.me form .form-control {
+    height: 48px;
+    border: 0;
+    font-family: "Roubik-light";
+    background-color: rgb(244, 242, 248);
+}
+
+.me form .btn {
+    color: #fff;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-transform: uppercase;
+    font-size: 14px;
+    background: #720655;
+    font-family: "Roubik-medium";
+}
+
+/* Password */
+
+.password form small {
+    color: #000;
+    font-size: 12px;
+    font-family: "Roubik-light";
+    text-transform: uppercase;
+}
+
+.password form .form-control {
+    height: 48px;
+    border: 0;
+    font-family: "Roubik-light";
+    background-color: rgb(244, 242, 248);
+}
+
+.password form .btn {
+    color: #fff;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-transform: uppercase;
+    font-size: 14px;
+    background: #720655;
+    font-family: "Roubik-medium";
+}
+
+@media(max-width: 992px) {
+    .account .links-btns {
+        margin-top: 20px;
+    }
+}
+
+@media(min-width: 992px) {
+    .account .links-btns {
+        margin-top: 100px;
+    }
+}

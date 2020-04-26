@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './index.css';
-import Navbar from '../../../components/product_nav/index';
+import Navbar from '../../product_nav/index';
 
 class Checkout extends Component {
     constructor(props) {
@@ -25,6 +25,24 @@ class Checkout extends Component {
                                         <input type="text" className="form-control rounded-0 shadow-none" />
                                     </div>
 
+                                    {/* Email */}
+                                    <div className="form-group mb-3 mb-lg-4">
+                                        <label>Email</label>
+                                        <input type="text" className="form-control rounded-0 shadow-none" />
+                                    </div>
+
+                                    {/* Phone no */}
+                                    <div className="form-group mb-3 mb-lg-4">
+                                        <label>Phone no</label>
+                                        <input type="text" className="form-control rounded-0 shadow-none" />
+                                    </div>
+
+                                    {/* Town/City */}
+                                    <div className="form-group mb-3 mb-lg-4">
+                                        <label>Town/City</label>
+                                        <input type="text" className="form-control rounded-0 shadow-none" />
+                                    </div>
+
                                     {/* Address */}
                                     <div className="form-group mb-3 mb-lg-4">
                                         <label>address</label>
@@ -37,23 +55,6 @@ class Checkout extends Component {
                                         <input type="text" className="form-control rounded-0 shadow-none" />
                                     </div>
 
-                                    {/* Town/City */}
-                                    <div className="form-group mb-3 mb-lg-4">
-                                        <label>Town/City</label>
-                                        <input type="text" className="form-control rounded-0 shadow-none" />
-                                    </div>
-
-                                    {/* Phone no */}
-                                    <div className="form-group mb-3 mb-lg-4">
-                                        <label>Phone no</label>
-                                        <input type="text" className="form-control rounded-0 shadow-none" />
-                                    </div>
-
-                                    {/* Email */}
-                                    <div className="form-group mb-3 mb-lg-4">
-                                        <label>Email</label>
-                                        <input type="text" className="form-control rounded-0 shadow-none" />
-                                    </div>
                                 </form>
                             </div>
                         </div>
