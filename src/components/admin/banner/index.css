@@ -12,3 +12,22 @@
 .banner_index img {
     width: 140px;
 }
+
+.banner_create .inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.banner_create .inputfile+label {
+    display: inline-block;
+}
+
+/* Banner Create */
+
+.banner_create img {
+    max-height: 340px;
+}

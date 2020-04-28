@@ -1,0 +1,58 @@
+.category_index img {
+    height: 40px;
+}
+
+.category_index thead {
+    font-size: 14px;
+    font-family: "Roubik-medium";
+}
+
+.category_index tbody {
+    font-size: 13px;
+}
+
+.category_edit .form-control {
+    font-size: 14px;
+    font-family: "Roubik-regular";
+    height: 45px;
+}
+
+.category_edit img {
+    height: 140px;
+}
+
+.category_edit .inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.category_edit .inputfile+label {
+    display: inline-block;
+}
+
+.category_create .form-control {
+    font-size: 14px;
+    font-family: "Roubik-regular";
+    height: 45px;
+}
+
+.category_create img {
+    height: 140px;
+}
+
+.category_create .inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.category_create .inputfile+label {
+    display: inline-block;
+}

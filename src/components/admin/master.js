@@ -1,12 +1,17 @@
 import React, { Component } from 'react';
 import './style.css';
+import { Switch, Route, Link } from "react-router-dom";
+import $ from 'jquery';
 
 import Dashboard from './dashboard/index';
 // Banner
 import Banner from './banner/index';
 import BannerCreate from './banner/create';
+// Category
+import CategoryIndex from './category/index';
+import CategoryCreate from './category/create';
+import CategoryEdit from './category/edit';
 
-import { Switch, Route, Link } from "react-router-dom";
 
 import Logo from '../../assets/static/logo.png';
 import User from '../../assets/static/user.jpg';
@@ -15,6 +20,19 @@ class AdminMaster extends Component {
     constructor(props) {
         super(props);
         this.state = {}
+    }
+
+    componentDidMount() {
+        $('.dropdown-box').hide()
+    }
+
+    handleSideMenu() {
+        $('.side_bar').toggleClass('side_bar_hide', 'slow');
+        $('.main_section').toggleClass('side_main_section', 'slow')
+    }
+
+    handleDropDown() {
+        $('.dropdown-box').slideToggle()
     }
     render() {
         return (
@@ -31,7 +49,7 @@ class AdminMaster extends Component {
                                         </Link>
                                     </div>
                                     <div className="ml-auto">
-                                        <button type="button" className="btn btn-light rounded-circle shadow-none mx-2">
+                                        <button type="button" className="btn btn-light rounded-circle shadow-none mx-2" onClick={this.handleSideMenu}>
                                             <i className="fas fa-bars"></i>
                                         </button>
                                         <button type="button" className="btn btn-light rounded-circle shadow-none ml-2 mr-3 mr-lg-4 message_btn">
@@ -51,7 +69,15 @@ class AdminMaster extends Component {
                     <div className="side_bar shadow-sm">
                         <Link to="/admin/">dashboard</Link>
                         <Link to="/admin/banner">Banner</Link>
-                        <Link to="/">categories</Link>
+                        <Link to="/admin/category">categories</Link>
+                        <button type="button" className="btn btn-block text-left rounded-0 shadow-none" onClick={this.handleDropDown}>Products</button>
+                        <div className="dropdown-box bg-white shadow-sm px-3">
+                            <div className="py-3">
+                                <Link to="/admin/">dashboard</Link>
+                                <Link to="/admin/banner">Banner</Link>
+                                <Link to="/admin/category">categories</Link>
+                            </div>
+                        </div>
                         <Link to="/">orders</Link>
                     </div>
                     {/* Main section */}
@@ -62,6 +88,10 @@ class AdminMaster extends Component {
                             {/* Banner Routes */}
                             <Route exact path="/admin/banner" component={Banner} />
                             <Route exact path="/admin/banner/create" component={BannerCreate} />
+                            {/* Category Routes */}
+                            <Route exact path="/admin/category" component={CategoryIndex} />
+                            <Route exact path="/admin/category/create" component={CategoryCreate} />
+                            <Route exact path="/admin/category/:id/edit" component={CategoryEdit} />
 
                             <Route component={Dashboard} />
                         </Switch>

@@ -66,6 +66,10 @@
     transition: 0.5s;
 }
 
+.admin-master .side_bar_hide {
+    left: -100%;
+}
+
 .admin-master .side_bar a {
     font-size: 14px;
     display: block;
@@ -84,6 +88,29 @@
     background: #720655;
 }
 
+.admin-master .side_bar .btn {
+    font-size: 14px;
+    display: block;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 15px;
+    text-transform: capitalize;
+    font-family: "Roubik-regular";
+    color: #868686;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.admin-master .side_bar .btn:hover {
+    color: #fff;
+    background: #720655;
+}
+
+.admin-master .side_bar .active {
+    color: #fff;
+    background: #720655;
+}
+
 /* Main Section */
 
 .admin-master .main_section {
@@ -91,7 +118,10 @@
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 15px;
-    /* background: #e8f0f27c; */
     margin-left: 250px;
     transition: 0.5s;
+}
+
+.admin-master .side_main_section {
+    margin-left: 0px;
 }

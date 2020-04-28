@@ -8,8 +8,11 @@ import Banner from '../../../assets/sliders/slider1.png';
 class Index extends Component {
     constructor(props) {
         super(props);
-        this.state = {}
+        this.state = {
+
+        }
     }
+
     render() {
         return (
             <div>
@@ -38,14 +41,7 @@ class Index extends Component {
                                         <td className="pt-4">1</td>
                                         <td className="text-center"><img src={Banner} alt="Banner" /></td>
                                         <td className="text-center pt-4">
-                                            <button type="button" className="btn btn-sm btn-light rounded-0 shadow-none text-danger"><i className="fas fa-trash-alt"></i></button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td className="pt-4">2</td>
-                                        <td className="text-center"><img src={Banner} alt="Banner" /></td>
-                                        <td className="text-center pt-4">
-                                            <button type="button" className="btn btn-sm btn-light rounded-0 shadow-none text-danger"><i className="fas fa-trash-alt"></i></button>
+                                            <button type="button" className="btn btn-sm btn-light rounded-0 shadow-none text-danger" onClick={this.deleteBanner}><i className="fas fa-trash-alt"></i></button>
                                         </td>
                                     </tr>
                                 </tbody>
