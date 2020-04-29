@@ -22,7 +22,7 @@ class Index extends Component {
                     <div className="row">
                         <div className="col-12">
                             <div className="d-flex">
-                                <div className="mt-1"><h5>Category List</h5></div>
+                                <div className="mt-1 mb-0"><h5>Category List</h5></div>
                                 <div className="ml-auto">
                                     <Link to="/admin/category/create" className="btn btn-uniq rounded-0 shadow-sm text-white"><i className="fas fa-plus"></i></Link>
                                 </div>

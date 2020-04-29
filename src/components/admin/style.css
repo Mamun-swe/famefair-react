@@ -157,7 +157,18 @@
     position: absolute;
     right: 0;
     width: 130px;
-    height: 100px;
+    margin-top: 18px;
+}
+
+.admin-master .top_bar .user_section .profile_drop_box .btn {
+    margin: 0;
+    font-size: 13px;
+    transition: 0.4s;
+    font-family: "Roubik-regular";
+}
+
+.admin-master .top_bar .user_section .profile_drop_box .btn:hover {
+    background: #f1f1f1;
 }
 
 /* End User Profile Dropdown */
