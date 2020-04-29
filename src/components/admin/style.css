@@ -24,11 +24,22 @@
     height: 40px;
 }
 
-.admin-master .top_bar .message_btn {
+.admin-master .top_bar ul {
+    margin-bottom: 0;
+}
+
+.admin-master .top_bar ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+/* Notification  */
+
+.admin-master .top_bar .notification_btn {
     position: relative;
 }
 
-.admin-master .top_bar .message_count {
+.admin-master .top_bar .notification_count {
     position: absolute;
     top: 0px;
     left: 23px;
@@ -37,11 +48,119 @@
     font-family: "Roubik-bold";
 }
 
-.admin-master .top_bar .user_img {
+.admin-master .top_bar .notification_box {
+    position: absolute;
+    width: 250px;
+    height: 280px;
+    right: 50px;
+    margin-top: 18px;
+}
+
+.admin-master .top_bar .notification_box .tri_angle {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    transform: rotate(45deg);
+    top: -9px;
+    right: 30px;
+    z-index: 0;
+    background: #720655;
+}
+
+.admin-master .top_bar .notification_box .titel_bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #720655;
+}
+
+.admin-master .top_bar .notification_box .titel_bar p {
+    font-size: 13px;
+    font-family: "Roubik-medium";
+}
+
+.admin-master .top_bar .notification_box .notification_body {
+    height: 100%;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    overflow-y: scroll;
+}
+
+.admin-master .top_bar .notification_box .notification_body a {
+    font-size: 13px;
+    font-family: "Roubik-regular";
+    padding: 4px 8px;
+    display: block;
+    color: #000;
+    border-bottom: 1px solid #dfdfdf;
+    text-decoration: none;
+}
+
+.admin-master .top_bar .notification_box .notification_footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    text-align: center;
+}
+
+.admin-master .top_bar .notification_box .notification_footer a {
+    font-size: 13px;
+    font-family: "Roubik-regular";
+    display: block;
+}
+
+.admin-master .top_bar .notification_box .notification_body a:hover {
+    background: #f1f1f1;
+}
+
+.admin-master .top_bar .notification_box .notification_body::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+
+.admin-master .top_bar .notification_box .notification_body::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+
+.admin-master .top_bar .notification_box .notification_body::-webkit-scrollbar-thumb {
+    background: rgb(180, 179, 179);
+    border-radius: 6px;
+}
+
+/* Handle on hover */
+
+.admin-master .top_bar .notification_box .notification_body::-webkit-scrollbar-thumb:hover {
+    background: rgb(133, 131, 131);
+}
+
+/* End Notification */
+
+/* User Profile Dropdown */
+
+.admin-master .top_bar .user_section {
+    position: relative;
+}
+
+.admin-master .top_bar .user_section .user_img {
     width: 35px;
     height: 35px;
     cursor: pointer;
 }
+
+.admin-master .top_bar .user_section .profile_drop_box {
+    position: absolute;
+    right: 0;
+    width: 130px;
+    height: 100px;
+}
+
+/* End User Profile Dropdown */
 
 /* Main Menu */
 
@@ -124,4 +243,18 @@
 
 .admin-master .side_main_section {
     margin-left: 0px;
+}
+
+/* Notification Box in media */
+
+@media(min-width: 768px) {
+    .admin-master .top_bar .notification_box .tri_angle {
+        right: 27px;
+    }
+}
+
+@media(min-width: 992px) {
+    .admin-master .top_bar .notification_box .tri_angle {
+        right: 35px;
+    }
 }
