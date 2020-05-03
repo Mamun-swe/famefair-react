@@ -7,7 +7,7 @@ import NavBar from '../../product_nav/index'
 
 import product_image_1 from '../../../assets/products/8.png'
 
-let scrollAmount = 0;
+let scrollYAmount = 0;
 
 class Category extends Component {
     constructor(props) {
@@ -21,7 +21,7 @@ class Category extends Component {
     }
 
     componentDidMount() {
-        axios.get('https://jsonplaceholder.typicode.com/posts')
+        axios.get('https://jsonplaceholder.typicode.com/users')
             .then(response => {
                 this.setState({ posts: response.data })
             })
@@ -32,8 +32,8 @@ class Category extends Component {
     }
 
     handleScroll = () => {
-        scrollAmount = window.scrollY;
-        if (scrollAmount >= 200) {
+        scrollYAmount = window.scrollY;
+        if (scrollYAmount >= 200 && window.innerWidth >= 992) {
             $('.side_menu_section').addClass("fixed_side_menu_bar")
             $('.main_section').addClass("fixed_main_section")
         } else {

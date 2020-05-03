@@ -1,5 +1,9 @@
 /* Banner Index */
 
+.banner_index, .banner_create h5 {
+    font-family: "Roubik-medium";
+}
+
 .banner_index thead {
     font-size: 14px;
     font-family: "Roubik-medium";

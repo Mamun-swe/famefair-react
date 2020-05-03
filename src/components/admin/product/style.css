@@ -1,4 +1,22 @@
 /* Product Index */
-.product_index h5{
+
+.product_index h5 {
+    font-family: "Roubik-medium";
+}
+
+.product_index .table {
     font-family: "Roubik-regular";
+}
+
+.product_index thead {
+    font-family: "Roubik-medium";
+}
+
+.product_index tbody {
+    font-size: 14px;
+}
+
+.product_index img {
+    height: 60px;
+    width: 60px;
 }

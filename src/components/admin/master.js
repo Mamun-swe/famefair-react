@@ -13,6 +13,7 @@ import CategoryCreate from './category/create';
 import CategoryEdit from './category/edit';
 // Product
 import ProductIndex from './product/index';
+import ProductCreate from './product/create';
 
 
 import Logo from '../../assets/static/logo.png';
@@ -153,6 +154,7 @@ class AdminMaster extends Component {
                             <Route exact path="/admin/category/:id/edit" component={CategoryEdit} />
                             {/* Product Routes */}
                             <Route exact path="/admin/category/:id/products" component={ProductIndex} />
+                            <Route exact path="/admin/category/:id/products/create" component={ProductCreate} />
 
                             <Route component={Dashboard} />
                         </Switch>

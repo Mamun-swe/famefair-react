@@ -1,3 +1,8 @@
+
+.category_index, .category_edit, .category_create h5{
+    font-family: "Roubik-medium";
+}
+
 .category_index img {
     height: 40px;
 }

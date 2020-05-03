@@ -65,7 +65,7 @@ class Create extends Component {
                                                 <div className="ml-auto">
                                                     <input type="file" id="file" name="file" className="inputfile" onChange={this.onChangeHandler} />
                                                     <label htmlFor="file" className="btn btn-danger rounded-0 shadow-sm text-white px-4 mr-2 mt-2">Choose a file</label>
-                                                    <button type="submit" className="btn btn-uniq rounded-0 shadow-sm text-white px-4 py-2 upload-btn">Update</button>
+                                                    <button type="submit" className="btn btn-uniq rounded-0 shadow-sm text-white px-4 py-2 upload-btn">Upload</button>
                                                 </div>
                                             </div>
                                         </div>
