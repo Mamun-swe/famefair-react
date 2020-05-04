@@ -20,3 +20,18 @@
     height: 60px;
     width: 60px;
 }
+
+/* End Product Index */
+
+/* Product Create */
+
+.product_create .form-control {
+    font-size: 14px;
+    min-height: 45px;
+}
+
+.product_create .btn {
+    height: 45px;
+}
+
+/* End Product Create */

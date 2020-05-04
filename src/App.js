@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 
 import Home from './components/user/Home/index';
+import ProductShow from './components/user/Product/show';
 import Category from './components/user/category/index';
 import Cart from './components/user/cart/index';
 import Checkout from './components/user/checkout/index';
@@ -26,6 +27,7 @@ function App() {
         <Switch>
           {/* User Routes */}
           <Route exact path="/" component={Home} />
+          <Route exact path="/product/:id" component={ProductShow} /> 
           <Route path="/category/:categoryName" component={Category} />
           <Route path="/cart" component={Cart} />
           <Route path="/checkout" component={Checkout} />
