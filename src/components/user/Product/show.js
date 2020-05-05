@@ -98,9 +98,9 @@ class ShowProduct extends Component {
                                             <ReactImageMagnify {...imageProps} />
                                             <div className="img-list text-center mt-lg-2">
                                                 <ul>
-                                                    <li><img src={image1} onClick={this.handleImage} alt="source"/></li>
-                                                    <li><img src={image2} onClick={this.handleImage} alt="source"/></li>
-                                                    <li><img src={image3} onClick={this.handleImage} alt="source"/></li>
+                                                    <li><img src={image1} onClick={this.handleImage} alt="source" /></li>
+                                                    <li><img src={image2} onClick={this.handleImage} alt="source" /></li>
+                                                    <li><img src={image3} onClick={this.handleImage} alt="source" /></li>
                                                 </ul>
                                             </div>
                                         </div>
