@@ -21,3 +21,115 @@
 .uniq-btn:hover {
     color: #ffffff;
 }
+
+/* Product Show */
+
+.show_product h5 {
+    font-size: 18px;
+    line-height: 1.5rem;
+    font-family: "Roubik-medium";
+    margin-bottom: 20px;
+}
+
+.show_product .sku {
+    font-size: 15px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-family: "Roubik-regular";
+}
+
+.show_product .brand {
+    font-size: 15px;
+    margin-bottom: 3px;
+    text-transform: uppercase;
+    font-family: "Roubik-regular";
+}
+
+.show_product .brand span {
+    text-transform: capitalize;
+    color: #720655;
+}
+
+.show_product .information {
+    font-size: 15px;
+    line-height: 30px;
+    font-family: "Roubik-regular";
+    position: relative;
+}
+
+.show_product .information a {
+    color: #720655;
+    font-size: 13px;
+    text-decoration: none;
+    font-family: "Roubik-regular";
+    position: absolute;
+    bottom: -40px;
+    left: 110px;
+    background: #dfdfdf;
+    padding: 0px 20px;
+    border-radius: 16px;
+    transition: 0.3s;
+}
+
+.show_product .information a:hover {
+    color: #ffffff;
+    background: #720655;
+}
+
+/* Product Avilable */
+
+.show_product .product_avilavle h4 {
+    font-family: "Roubik-medium";
+    color: #720655;
+}
+
+.show_product .product_avilavle .btn {
+    background: #e6e7e9;
+    color: #720655;
+    transition: 0.3s;
+}
+
+.show_product .product_avilavle .btn:hover {
+    color: #fff;
+    background: #720655;
+}
+
+.show_product .product_avilavle .form-control {
+    border-left: 0;
+    border-right: 0;
+    border-top: 1px solid #e6e7e9;
+    border-bottom: 1px solid #e6e7e9;
+}
+
+.show_product .product_avilavle .form-control:focus {
+    border-top: 1px solid #e6e7e9;
+    border-bottom: 1px solid #e6e7e9;
+}
+
+.show_product .product_avilavle
+/* Chrome, Safari, Edge, Opera */
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+
+.show_product .product_avilavle input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.show_product .product_avilavle .add-cart-btn{
+    color: #fff;
+    background: #720655;
+    font-family: "Roubik-regular";
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+@media(min-width: 992px) {
+    .show_product {
+        margin-top: 100px;
+    }
+}
