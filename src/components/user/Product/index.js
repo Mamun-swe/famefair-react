@@ -14,7 +14,7 @@ class Product extends Component {
         }
     }
 
-    componentDidMount() {
+    getProducts() {
         axios.get('https://jsonplaceholder.typicode.com/users')
             .then(response => {
                 this.setState({ posts: response.data })
@@ -22,6 +22,10 @@ class Product extends Component {
             .catch(error => {
                 console.log(error)
             })
+    }
+
+    componentDidMount() {
+        this.getProducts()
     }
 
     render() {
@@ -72,17 +76,17 @@ class Product extends Component {
                         </div>
                         {/* End Repeat Category */}
 
-                        
 
-                        
 
-                        
 
-                        
 
-                       
 
-                        
+
+
+
+
+
+
 
                     </div>
                 </div>

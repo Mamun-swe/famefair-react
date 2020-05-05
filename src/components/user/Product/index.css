@@ -24,6 +24,25 @@
 
 /* Product Show */
 
+/* Image List */
+
+.show_product .img-list ul li {
+    list-style: none;
+    display: inline-block;
+    border: 1px solid #c2c1c1;
+    margin: 2px;
+    cursor: pointer;
+}
+
+.show_product .img-list ul li img {
+    width: 90px;
+    height: 90px;
+}
+
+/* End Image List */
+
+/* Product Information */
+
 .show_product h5 {
     font-size: 18px;
     line-height: 1.5rem;
@@ -76,11 +95,22 @@
     background: #720655;
 }
 
+/* End Product Information */
+
 /* Product Avilable */
 
 .show_product .product_avilavle h4 {
     font-family: "Roubik-medium";
     color: #720655;
+}
+
+.show_product .product_avilavle .extra_methods .methods h5 {
+    font-family: "Roubik-medium";
+    border-bottom: 1px solid rgb(199, 198, 198);
+}
+
+.show_product .product_avilavle .extra_methods .methods small {
+    font-family: "Roubik-regular";
 }
 
 .show_product .product_avilavle .btn {
@@ -120,7 +150,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
     -moz-appearance: textfield;
 }
 
-.show_product .product_avilavle .add-cart-btn{
+.show_product .product_avilavle .add-cart-btn {
     color: #fff;
     background: #720655;
     font-family: "Roubik-regular";
@@ -128,8 +158,60 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
     font-size: 13px;
 }
 
+/* Client Revieww */
+
+.client_review h6 {
+    font-family: "Roubik-medium";
+}
+
+.client_review .reviews img {
+    width: 80px;
+    height: 80px;
+}
+
+.client_review .reviews .rating ul {
+    margin: 0;
+    padding: 0;
+}
+
+.client_review .reviews .rating ul li {
+    list-style: none;
+    float: left;
+}
+
+.client_review .reviews .rating ul li i {
+    font-size: 12px;
+}
+
+.client_review .reviews p {
+    font-family: "Roubik-regular";
+    font-size: 13px;
+}
+
+.client_review .reviews .btn {
+    color: #fff;
+    background: #720655;
+    font-family: "Roubik-regular";
+    font-size: 13px;
+    padding: 4px 30px;
+    border-radius: 16px;
+}
+
+/* End Client Review */
+
+.related_products h5 {
+    font-family: "Roubik-medium";
+}
+
 @media(min-width: 992px) {
     .show_product {
         margin-top: 100px;
+    }
+}
+
+@media(max-width: 576px) {
+    .show_product .img-list ul li img {
+        width: 70px;
+        height: 70px;
     }
 }
