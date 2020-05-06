@@ -58,9 +58,7 @@ class productCreate extends Component {
             { value: 'apple', label: 'Apple' },
         ]
         const animatedComponents = makeAnimated();
-        const styles = {
-            height: 500
-        }
+      
 
 
         return (
@@ -109,7 +107,9 @@ class productCreate extends Component {
                                             onChange={this.onChangeInput}
                                         />
 
-                                        <div style={styles}></div>
+                                        {/* Product Size */}
+
+                                       
 
                                         {/* EKEditor */}
                                         {/* <CKEditor
