@@ -1,21 +1,53 @@
 import React, { Component } from 'react';
 import Select from 'react-select';
 import makeAnimated from 'react-select/animated';
-// import CKEditor from '@ckeditor/ckeditor5-react';
-// import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
+import CKEditor from '@ckeditor/ckeditor5-react';
+import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 
 class productCreate extends Component {
     constructor(props) {
         super(props);
         this.state = {
             paramid: null,
-            // productName: "",
-            // productNameError: "",
+            productName: "",
+            productColors: "",
+            productBrands: "",
+            productSizes: "",
+            productInfo: ""
         }
     }
     // Form Handle
-    onChangeInput(value) {
-        console.log(value)
+    onChangeInputName = (event) => {
+        this.setState({
+            productName: event.target.value
+        })
+    }
+    onChangeInputColors = (value) => {
+        this.setState({
+            productColors: value
+        })
+    }
+    onChangeInputBrand = (value) => {
+        this.setState({
+            productBrands: value
+        })
+    }
+    onChangeInputSize = (value) => {
+        this.setState({
+            productSizes: value
+        })
+    }
+
+    handleSubmit = (e) => {
+        e.preventDefault();
+        const xdata = {
+            name: this.state.productName,
+            colors: this.state.productColors,
+            brands: this.state.productBrands,
+            sizes: this.state.productSizes,
+            info: this.state.productInfo
+        }
+        console.log(xdata)
     }
 
     paramId() {
@@ -45,7 +77,6 @@ class productCreate extends Component {
             { value: 'brown', label: 'Brown' },
             { value: 'sky-blue', label: 'Sky Blue' },
         ]
-
         const brands = [
             { value: 'rfl', label: 'RFL' },
             { value: 'apex', label: 'Apex' },
@@ -57,9 +88,15 @@ class productCreate extends Component {
             { value: 'nokia', label: 'Nokia' },
             { value: 'apple', label: 'Apple' },
         ]
+        const sizes = [
+            { value: 's', label: 'S' },
+            { value: 'm', label: 'M' },
+            { value: 'l', label: 'L' },
+            { value: 'xl', label: 'XL' },
+            { value: 'xxl', label: 'XXL' },
+            { value: 'xxxl', label: 'XXXL' }
+        ]
         const animatedComponents = makeAnimated();
-      
-
 
         return (
             <div className="product_create">
@@ -76,15 +113,10 @@ class productCreate extends Component {
                                         {/* Product Name */}
                                         <div className="form-group mb-3 mb-lg-4">
                                             <small className="text-muted">Product Name</small>
-                                            <input name="productName"
-                                                className="form-control rounded-0 shadow-none" placeholder="Enter Product Name" />
-                                        </div>
-
-                                        {/* Product Brand */}
-                                        <div className="form-group mb-3 mb-lg-4">
-                                            <small className="text-muted">Product Brand</small>
-                                            <input name="productBrand"
-                                                className="form-control rounded-0 shadow-none" placeholder="Enter Product Brand" />
+                                            <input
+                                                className="form-control rounded-0 shadow-none"
+                                                placeholder="Enter Product Name"
+                                                onChange={this.onChangeInputName} />
                                         </div>
 
                                         {/* Product Color */}
@@ -95,7 +127,7 @@ class productCreate extends Component {
                                             components={animatedComponents}
                                             isMulti
                                             options={colors}
-                                            onChange={this.onChangeInput}
+                                            onChange={this.onChangeInputColors}
                                         />
 
                                         {/* Product Brand */}
@@ -104,28 +136,30 @@ class productCreate extends Component {
                                             className="mb-4"
                                             components={animatedComponents}
                                             options={brands}
-                                            onChange={this.onChangeInput}
+                                            onChange={this.onChangeInputBrand}
                                         />
 
                                         {/* Product Size */}
+                                        <small className="text-muted">Select Size</small>
+                                        <Select
+                                            className="mb-4"
+                                            components={animatedComponents}
+                                            isMulti
+                                            options={sizes}
+                                            onChange={this.onChangeInputSize}
+                                        />
 
-                                       
 
                                         {/* EKEditor */}
-                                        {/* <CKEditor
+                                        <CKEditor
                                             editor={ClassicEditor}
-                                            onInit={editor => {
-                                                // You can store the "editor" and use when it is needed.
-                                                console.log('Editor is ready to use!', editor);
-                                            }}
                                             onChange={(event, editor) => {
                                                 const data = editor.getData();
-                                                console.log({ event, editor, data });
+                                                this.setState({ productInfo: data })
                                             }}
-                                            className="mb-4"
-                                        /> */}
-
-
+                                            className="form-control"
+                                        />
+                                        <br />
 
 
                                         <button type="submit" className="btn btn-info rounded-0 shadow-none text-white btn-block">Submit</button>
