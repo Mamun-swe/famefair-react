@@ -168,7 +168,50 @@ class ShowProduct extends Component {
                                             <div className="card border-0">
                                                 <div className="card-body">
                                                     <h4 className="mb-3">Available Quantity: 500</h4>
-                                                    <div className="extra_methods mb-3">
+
+                                                    <form>
+                                                        {/* Colors */}
+                                                        <div className="color mb-3">
+                                                            <h5 className="pb-2 mb-3">Avilable Colors</h5>
+
+                                                            <div className="form-check mb-2">
+                                                                <input type="checkbox" className="form-check-input" />
+                                                                <label className="form-check-label">red</label>
+                                                            </div>
+                                                            <div className="form-check mb-2">
+                                                                <input type="checkbox" className="form-check-input" />
+                                                                <label className="form-check-label">blue</label>
+                                                            </div>
+                                                            <div className="form-check mb-2">
+                                                                <input type="checkbox" className="form-check-input" />
+                                                                <label className="form-check-label">yellow</label>
+                                                            </div>
+                                                        </div>
+                                                        {/* Price */}
+                                                        <div className="price">
+                                                            <h5>Price: 500tk</h5>
+                                                        </div>
+
+                                                        <div className="d-flex mb-3">
+                                                            <div>
+                                                                <button type="button" className="btn border rounded-0 shadow-none" id="descBtn" onClick={this.decrementProductQnt} disabled={this.isDisabledDecrement()}>
+                                                                    <i className="fas fa-minus"></i>
+                                                                </button>
+                                                            </div>
+                                                            <div className="flex-fill">
+                                                                <input type="number" className="form-control rounded-0 shadow-none text-center" value={this.state.count} readOnly />
+                                                            </div>
+                                                            <div>
+                                                                <button type="button" className="btn border rounded-0 shadow-none" onClick={this.incrementProductQnt}>
+                                                                    <i className="fas fa-plus"></i>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                        <button type="submit" className="btn btn-block add-cart-btn rounded-0 shadow-none text-white py-2">Add to cart</button>
+                                                    </form>
+
+
+                                                    <div className="extra_methods my-4">
                                                         <div className="methods mb-4">
                                                             <h5 className="pb-2 mb-0">Payment Options</h5>
                                                             <small>Cash on Delivery (Out Dhaka)</small>
@@ -184,22 +227,7 @@ class ShowProduct extends Component {
                                                             <small>Local Warranty - (31) Days</small>
                                                         </div>
                                                     </div>
-                                                    <div className="d-flex mb-3">
-                                                        <div>
-                                                            <button type="button" className="btn border rounded-0 shadow-none" id="descBtn" onClick={this.decrementProductQnt} disabled={this.isDisabledDecrement()}>
-                                                                <i className="fas fa-minus"></i>
-                                                            </button>
-                                                        </div>
-                                                        <div className="flex-fill">
-                                                            <input type="number" className="form-control rounded-0 shadow-none text-center" value={this.state.count} readOnly />
-                                                        </div>
-                                                        <div>
-                                                            <button type="button" className="btn border rounded-0 shadow-none" onClick={this.incrementProductQnt}>
-                                                                <i className="fas fa-plus"></i>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                    <button type="button" className="btn btn-block add-cart-btn rounded-0 shadow-none text-white py-2">Add to cart</button>
+
                                                 </div>
                                             </div>
                                         </div>

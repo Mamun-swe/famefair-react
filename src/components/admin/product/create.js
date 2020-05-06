@@ -1,34 +1,66 @@
 import React, { Component } from 'react';
 import Select from 'react-select';
-import CKEditor from '@ckeditor/ckeditor5-react';
-import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
+import makeAnimated from 'react-select/animated';
+// import CKEditor from '@ckeditor/ckeditor5-react';
+// import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 
 class productCreate extends Component {
     constructor(props) {
         super(props);
         this.state = {
             paramid: null,
-            productName: "",
-            productNameError: "",
+            // productName: "",
+            // productNameError: "",
         }
     }
     // Form Handle
-
-    componentDidMount() {
-        this.setState({ paramid: this.paramId() });
+    onChangeInput(value) {
+        console.log(value)
     }
 
     paramId() {
         return this.props.match.params.id;
     }
 
+    componentDidMount() {
+        this.setState({ paramid: this.paramId() });
+    }
+
+
 
     render() {
-        const options = [
-            { value: 'chocolate', label: 'Chocolate' },
-            { value: 'strawberry', label: 'Strawberry' },
-            { value: 'vanilla', label: 'Vanilla' }
+        const colors = [
+            { value: 'white', label: 'White' },
+            { value: 'black', label: 'Black' },
+            { value: 'red', label: 'Red' },
+            { value: 'orange', label: 'Orange' },
+            { value: 'green', label: 'Green' },
+            { value: 'yellow', label: 'Yellow' },
+            { value: 'violet', label: 'Violet' },
+            { value: 'pink', label: 'Pink' },
+            { value: 'navy-blue', label: 'Navy Blue' },
+            { value: 'maroon', label: 'Maroon' },
+            { value: 'lemon', label: 'Lemon' },
+            { value: 'coffe', label: 'Coffe' },
+            { value: 'brown', label: 'Brown' },
+            { value: 'sky-blue', label: 'Sky Blue' },
         ]
+
+        const brands = [
+            { value: 'rfl', label: 'RFL' },
+            { value: 'apex', label: 'Apex' },
+            { value: 'lotto', label: 'Lotto' },
+            { value: 'square', label: 'Square' },
+            { value: 'magi', label: 'Magi' },
+            { value: 'xiaomi', label: 'Xiaomi' },
+            { value: 'samsung', label: 'Samsung' },
+            { value: 'nokia', label: 'Nokia' },
+            { value: 'apple', label: 'Apple' },
+        ]
+        const animatedComponents = makeAnimated();
+        const styles = {
+            height: 500
+        }
 
 
         return (
@@ -45,17 +77,42 @@ class productCreate extends Component {
                                     <form onSubmit={this.handleSubmit}>
                                         {/* Product Name */}
                                         <div className="form-group mb-3 mb-lg-4">
-
                                             <small className="text-muted">Product Name</small>
                                             <input name="productName"
                                                 className="form-control rounded-0 shadow-none" placeholder="Enter Product Name" />
                                         </div>
 
                                         {/* Product Brand */}
-                                        <Select options={options} className="mb-4" />
+                                        <div className="form-group mb-3 mb-lg-4">
+                                            <small className="text-muted">Product Brand</small>
+                                            <input name="productBrand"
+                                                className="form-control rounded-0 shadow-none" placeholder="Enter Product Brand" />
+                                        </div>
+
+                                        {/* Product Color */}
+                                        <small className="text-muted">Select Color</small>
+                                        <Select
+                                            className="mb-4"
+                                            closeMenuOnSelect={false}
+                                            components={animatedComponents}
+                                            isMulti
+                                            options={colors}
+                                            onChange={this.onChangeInput}
+                                        />
+
+                                        {/* Product Brand */}
+                                        <small className="text-muted">Select Brand</small>
+                                        <Select
+                                            className="mb-4"
+                                            components={animatedComponents}
+                                            options={brands}
+                                            onChange={this.onChangeInput}
+                                        />
+
+                                        <div style={styles}></div>
 
                                         {/* EKEditor */}
-                                        <CKEditor
+                                        {/* <CKEditor
                                             editor={ClassicEditor}
                                             onInit={editor => {
                                                 // You can store the "editor" and use when it is needed.
@@ -66,7 +123,7 @@ class productCreate extends Component {
                                                 console.log({ event, editor, data });
                                             }}
                                             className="mb-4"
-                                        />
+                                        /> */}
 
 
 
