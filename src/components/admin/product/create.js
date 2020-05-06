@@ -5,21 +5,31 @@ import CKEditor from '@ckeditor/ckeditor5-react';
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 
 class productCreate extends Component {
+    fileObj = [];
+    fileArray = [];
+
     constructor(props) {
         super(props);
         this.state = {
             paramid: null,
             productName: "",
+            productQuantity: "",
             productColors: "",
             productBrands: "",
             productSizes: "",
-            productInfo: ""
+            productInfo: "",
+            productImages: [null]
         }
     }
     // Form Handle
     onChangeInputName = (event) => {
         this.setState({
             productName: event.target.value
+        })
+    }
+    onChangeInputQuantity = (event) => {
+        this.setState({
+            productQuantity: event.target.value
         })
     }
     onChangeInputColors = (value) => {
@@ -37,15 +47,24 @@ class productCreate extends Component {
             productSizes: value
         })
     }
+    onChangeFilesHandler = event => {
+        this.fileObj.push(event.target.files)
+        for (let i = 0; i < this.fileObj[0].length; i++) {
+            this.fileArray.push(URL.createObjectURL(this.fileObj[0][i]))
+        }
+        this.setState({ productImages: this.fileArray })
+    }
 
     handleSubmit = (e) => {
         e.preventDefault();
         const xdata = {
+            categoryId: this.state.paramid,
             name: this.state.productName,
             colors: this.state.productColors,
             brands: this.state.productBrands,
             sizes: this.state.productSizes,
-            info: this.state.productInfo
+            info: this.state.productInfo,
+            images: this.state.productImages
         }
         console.log(xdata)
     }
@@ -119,6 +138,15 @@ class productCreate extends Component {
                                                 onChange={this.onChangeInputName} />
                                         </div>
 
+                                        {/* Product Quantity */}
+                                        <div className="form-group mb-3 mb-lg-4">
+                                            <small className="text-muted">Product Quantity</small>
+                                            <input
+                                                className="form-control rounded-0 shadow-none"
+                                                placeholder="Enter Product Quantity"
+                                                onChange={this.onChangeInputQuantity} />
+                                        </div>
+
                                         {/* Product Color */}
                                         <small className="text-muted">Select Color</small>
                                         <Select
@@ -149,8 +177,8 @@ class productCreate extends Component {
                                             onChange={this.onChangeInputSize}
                                         />
 
-
-                                        {/* EKEditor */}
+                                        {/* Product Information */}
+                                        <small className="text-muted">Product Information</small>
                                         <CKEditor
                                             editor={ClassicEditor}
                                             onChange={(event, editor) => {
@@ -161,6 +189,24 @@ class productCreate extends Component {
                                         />
                                         <br />
 
+                                        {/* Product Images */}
+                                        <div className="form-group mb-3">
+                                            <div className="form-group multi-preview">
+                                                {(this.fileArray || []).map(url => (
+                                                    <img src={url} alt="Products" key={url} />
+                                                ))}
+                                            </div>
+                                        </div>
+
+                                        <div className="form-group mb-3 file-upload-btn">
+                                            <div className="d-flex">
+                                                <div className="ml-auto">
+                                                    <input type="file" id="file" name="file" className="inputfile" onChange={this.onChangeFilesHandler} multiple />
+                                                    <label htmlFor="file" className="btn btn-danger rounded-0 shadow-sm text-white px-4 mr-2 mt-2">Select product images</label>
+                                                    <button type="submit" className="btn btn-uniq rounded-0 shadow-sm text-white px-4 py-2 upload-btn">Upload</button>
+                                                </div>
+                                            </div>
+                                        </div>
 
                                         <button type="submit" className="btn btn-info rounded-0 shadow-none text-white btn-block">Submit</button>
                                     </form>

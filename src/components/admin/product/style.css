@@ -30,8 +30,31 @@
     min-height: 45px;
 }
 
+.product_create .inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.product_create .inputfile+label {
+    display: inline-block;
+}
+
+.product_create .file-upload-btn label {
+    padding-top: 9px;
+}
+
 .product_create .btn {
     height: 45px;
+}
+
+.product_create img {
+    width: 150px;
+    height: 100px;
+    margin-right: 10px;
 }
 
 /* End Product Create */
