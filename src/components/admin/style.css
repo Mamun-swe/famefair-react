@@ -236,7 +236,7 @@
     background: #720655;
 }
 
-.admin-master .side_bar .active {
+.admin-master .side_bar .is-active {
     color: #fff;
     background: #720655;
 }

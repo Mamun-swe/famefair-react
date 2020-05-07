@@ -42,6 +42,14 @@ class BrandIndex extends Component {
                                             <Link to={`/admin/brand/${2}/edit`} type="button" className="btn btn-sm btn-light rounded-0 shadow-none text-info"><i className="fas fa-pen"></i></Link>
                                         </td>
                                     </tr>
+                                    <tr>
+                                        <td className="pt-4">1</td>
+                                        <td className="text-capitalize pt-4">dummy name</td>
+                                        <td className="text-center pt-4">
+                                            <button type="button" className="btn btn-sm btn-light rounded-0 shadow-none text-danger" onClick={this.deleteCategory}><i className="fas fa-trash-alt"></i></button>
+                                            <Link to={`/admin/brand/${2}/edit`} type="button" className="btn btn-sm btn-light rounded-0 shadow-none text-info"><i className="fas fa-pen"></i></Link>
+                                        </td>
+                                    </tr>
                                 </tbody>
 
                             </Table>

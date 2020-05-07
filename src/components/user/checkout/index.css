@@ -12,7 +12,7 @@
 
 .checkout .billing_form form .form-control {
     height: 48px;
-    border: 0;
+    border: 1px solid #dfdfdf;
     font-family: "Roubik-light";
     background-color: rgb(244, 242, 248);
 }

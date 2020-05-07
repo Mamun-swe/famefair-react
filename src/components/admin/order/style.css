@@ -1,0 +1,31 @@
+/* Order Index */
+
+.order_index .count_column .card {
+    height: 100px;
+}
+
+.order_index .count_column .card h5 {
+    font-family: "Roubik-medium";
+}
+
+.order_index .count_column .card h6 {
+    font-family: "Roubik-regular";
+}
+
+.order_index .table thead{
+    font-size: 14px;
+    font-family: "Roubik-medium";
+}
+
+.order_index .table tbody{
+    font-size: 13px;
+    font-family: "Roubik-regular";
+}
+
+@media(max-width: 576px) {
+    .order_index .count_column .card h5 {
+        font-size: 15px;
+    }
+}
+
+/* End Order Index */

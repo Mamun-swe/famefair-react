@@ -6,7 +6,7 @@ import History from './history/index';
 import Me from './me/index';
 import Password from './password/index';
 
-import { Switch, Route, Link } from "react-router-dom";
+import { Switch, Route, NavLink } from "react-router-dom";
 
 
 class AccountMaster extends Component {
@@ -24,13 +24,13 @@ class AccountMaster extends Component {
                             <div className="col-12">
                                 <div className="d-flex links_button">
                                     <div className="flex-fill pr-1 pr-md-2">
-                                        <Link to="/account/" className="btn btn-block rounded-0 shadow-sm">Order History</Link>
+                                        <NavLink exact to="/account/" activeClassName="is-active" className="btn btn-block rounded-0 shadow-sm">Order History</NavLink>
                                     </div>
                                     <div className="flex-fill px-1 px-md-2">
-                                        <Link to="/account/me" className="btn btn-block rounded-0 shadow-sm">View Profile</Link>
+                                        <NavLink exact to="/account/me" activeClassName="is-active" className="btn btn-block rounded-0 shadow-sm">View Profile</NavLink>
                                     </div>
                                     <div className="flex-fill pl-1 pl-md-2">
-                                        <Link to="/account/change-password" className="btn btn-block rounded-0 shadow-sm">Change Password</Link>
+                                        <NavLink exact to="/account/change-password" activeClassName="is-active" className="btn btn-block rounded-0 shadow-sm">Change Password</NavLink>
                                     </div>
                                 </div>
                             </div>

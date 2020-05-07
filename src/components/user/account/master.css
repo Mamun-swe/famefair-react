@@ -8,6 +8,11 @@
     font-family: "Roubik-medium";
 }
 
+.links_button .is-active {
+    color: #fff;
+    background: #720655;
+}
+
 /* History */
 
 .history .header h5 {
@@ -57,7 +62,7 @@
 
 .me form .form-control {
     height: 48px;
-    border: 0;
+    border: 1px solid #dfdfdf;
     font-family: "Roubik-light";
     background-color: rgb(244, 242, 248);
 }
@@ -83,7 +88,7 @@
 
 .password form .form-control {
     height: 48px;
-    border: 0;
+    border: 1px solid #dfdfdf;
     font-family: "Roubik-light";
     background-color: rgb(244, 242, 248);
 }

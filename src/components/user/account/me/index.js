@@ -65,16 +65,6 @@ class Me extends Component {
 
                                 <button type="submit" className="btn btn-block rounded-0 shadow-none text-white">update profile</button>
 
-
-
-
-
-
-
-
-
-
-
                             </form>
                         </div>
                     </div>

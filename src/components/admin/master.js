@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './style.css';
-import { Switch, Route, Link } from "react-router-dom";
+import { Switch, Route, Link, NavLink } from "react-router-dom";
 import $ from 'jquery';
 
 import Dashboard from './dashboard/index';
@@ -18,6 +18,8 @@ import ProductCreate from './product/create';
 import BrandIndex from './brand/index';
 import BrandCreate from './brand/create';
 import BrandEdit from './brand/edit';
+// Order
+import OrderIndex from './order/index';
 
 
 import Logo from '../../assets/static/logo.png';
@@ -77,14 +79,14 @@ class AdminMaster extends Component {
                                             <li>
                                                 {/* Notifications Button */}
                                                 <button type="button" className="btn btn-light rounded-circle shadow-none ml-2 mr-3 mr-lg-4 notification_btn" onClick={this.handleNotification}>
-                                                    <i className="fas fa-bell"></i>
+                                                    <i className="fas fa-envelope"></i>
                                                     <span className="notification_count">10+</span>
                                                 </button>
                                                 {/* Notifications Box */}
                                                 <div className="notification_box bg-white shadow-sm border">
                                                     <div className="tri_angle shadow-sm"></div>
                                                     <div className="titel_bar px-2 py-1">
-                                                        <p className="mb-0 text-white">Notifications</p>
+                                                        <p className="mb-0 text-white">Messages</p>
                                                     </div>
                                                     <div className="notification_body">
                                                         <Link to="/"><p className="mb-0">Lorem ispum 1</p></Link>
@@ -130,20 +132,20 @@ class AdminMaster extends Component {
                 <div className="main_menu">
                     {/* Side Bar */}
                     <div className="side_bar shadow-sm">
-                        <Link to="/admin/">dashboard</Link>
-                        <Link to="/admin/banner">Banner</Link>
-                        <Link to="/admin/category">categories</Link>
+                        <NavLink exact to="/admin/" activeClassName="is-active">dashboard</NavLink>
+                        <NavLink exact to="/admin/banner" activeClassName="is-active">Banner</NavLink>
+                        <NavLink exact to="/admin/category" activeClassName="is-active">categories</NavLink>
                         <button type="button" className="btn btn-block text-left rounded-0 shadow-none" onClick={this.handleDropDown}>Products</button>
                         {/* Category in dropdown */}
                         <div className="dropdown-box bg-white shadow-sm px-3">
                             <div className="py-3">
-                                <Link to={`/admin/category/${2}/products`}>men fashion</Link>
-                                <Link to={`/admin/category/${2}/products`}>women fashion</Link>
-                                <Link to={`/admin/category/${2}/products`}>t-shirt</Link>
+                                <NavLink exact to={`/admin/category/${2}/products`} activeClassName="is-active">men fashion</NavLink>
+                                <NavLink exact to={`/admin/category/${3}/products`} activeClassName="is-active">women fashion</NavLink>
+                                <NavLink exact to={`/admin/category/${4}/products`} activeClassName="is-active">t-shirt</NavLink>
                             </div>
                         </div>
-                        <Link to="/admin/brands">brands</Link>
-                        <Link to="/">orders</Link>
+                        <NavLink exact to="/admin/brands" activeClassName="is-active">brands</NavLink>
+                        <NavLink exact to="/admin/orders" activeClassName="is-active">orders</NavLink>
                     </div>
                     {/* Main section */}
                     <div className="main_section">
@@ -164,6 +166,8 @@ class AdminMaster extends Component {
                             <Route exact path="/admin/brands" component={BrandIndex} />
                             <Route exact path="/admin/brand/create" component={BrandCreate} />
                             <Route exact path="/admin/brand/:id/edit" component={BrandEdit} />
+                            {/* Order Routes */}
+                            <Route exact path="/admin/orders" component={OrderIndex} />
 
                             <Route component={Dashboard} />
                         </Switch>
