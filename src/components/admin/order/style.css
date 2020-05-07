@@ -12,14 +12,28 @@
     font-family: "Roubik-regular";
 }
 
-.order_index .table thead{
+.order_index .table thead {
     font-size: 14px;
     font-family: "Roubik-medium";
 }
 
-.order_index .table tbody{
+.order_index .table tbody {
     font-size: 13px;
     font-family: "Roubik-regular";
+}
+
+.order_index .order_type_button_column .btn {
+    font-size: 13px;
+}
+
+.order_index .form-control {
+    font-size: 13px;
+    font-family: "Roubik-regular";
+}
+
+.order_index .is-active{
+    color: #fff;
+    background: #720655;
 }
 
 @media(max-width: 576px) {

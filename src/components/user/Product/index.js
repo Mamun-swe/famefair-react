@@ -62,7 +62,7 @@ class Product extends Component {
                                                         </div>
                                                     </div>
                                                     <div className="card-content p-2">
-                                                        <p className="mb-1 text-capitalize name">product name {post.id}</p>
+                                                        <p className="mb-1 text-capitalize name">{post.username}</p>
                                                         <p className="mb-2 price">220tk</p>
                                                         <Link to={`/product/${post.id}`} type="button" className="btn shadow-none">View</Link>
                                                     </div>

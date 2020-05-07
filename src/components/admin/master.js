@@ -19,7 +19,7 @@ import BrandIndex from './brand/index';
 import BrandCreate from './brand/create';
 import BrandEdit from './brand/edit';
 // Order
-import OrderIndex from './order/index';
+import OrderMaster from './order/master';
 
 
 import Logo from '../../assets/static/logo.png';
@@ -167,7 +167,7 @@ class AdminMaster extends Component {
                             <Route exact path="/admin/brand/create" component={BrandCreate} />
                             <Route exact path="/admin/brand/:id/edit" component={BrandEdit} />
                             {/* Order Routes */}
-                            <Route exact path="/admin/orders" component={OrderIndex} />
+                            <Route exact path="/admin/orders" component={OrderMaster} />
 
                             <Route component={Dashboard} />
                         </Switch>
