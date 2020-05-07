@@ -1,0 +1,32 @@
+.brand_index h5 {
+    font-family: "Roubik-medium";
+}
+
+.brand_edit h5 {
+    font-family: "Roubik-medium";
+}
+
+.brand_create h5 {
+    font-family: "Roubik-medium";
+}
+
+.brand_index thead {
+    font-size: 14px;
+    font-family: "Roubik-medium";
+}
+
+.brand_index tbody {
+    font-size: 13px;
+}
+
+.brand_create .form-control {
+    font-size: 14px;
+    font-family: "Roubik-regular";
+    height: 45px;
+}
+
+.brand_edit .form-control {
+    font-size: 14px;
+    font-family: "Roubik-regular";
+    height: 45px;
+}

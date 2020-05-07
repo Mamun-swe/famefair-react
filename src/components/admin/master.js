@@ -14,6 +14,10 @@ import CategoryEdit from './category/edit';
 // Product
 import ProductIndex from './product/index';
 import ProductCreate from './product/create';
+// Brand
+import BrandIndex from './brand/index';
+import BrandCreate from './brand/create';
+import BrandEdit from './brand/edit';
 
 
 import Logo from '../../assets/static/logo.png';
@@ -138,6 +142,7 @@ class AdminMaster extends Component {
                                 <Link to={`/admin/category/${2}/products`}>t-shirt</Link>
                             </div>
                         </div>
+                        <Link to="/admin/brands">brands</Link>
                         <Link to="/">orders</Link>
                     </div>
                     {/* Main section */}
@@ -155,6 +160,10 @@ class AdminMaster extends Component {
                             {/* Product Routes */}
                             <Route exact path="/admin/category/:id/products" component={ProductIndex} />
                             <Route exact path="/admin/category/:id/products/create" component={ProductCreate} />
+                            {/* Brand Routes */}
+                            <Route exact path="/admin/brands" component={BrandIndex} />
+                            <Route exact path="/admin/brand/create" component={BrandCreate} />
+                            <Route exact path="/admin/brand/:id/edit" component={BrandEdit} />
 
                             <Route component={Dashboard} />
                         </Switch>

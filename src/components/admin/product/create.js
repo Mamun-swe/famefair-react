@@ -14,6 +14,7 @@ class productCreate extends Component {
             paramid: null,
             productName: "",
             productQuantity: "",
+            productPrice: "",
             productColors: "",
             productBrands: "",
             productSizes: "",
@@ -30,6 +31,11 @@ class productCreate extends Component {
     onChangeInputQuantity = (event) => {
         this.setState({
             productQuantity: event.target.value
+        })
+    }
+    onChangeInputPrice = (event) => {
+        this.setState({
+            productPrice: event.target.value
         })
     }
     onChangeInputColors = (value) => {
@@ -55,11 +61,13 @@ class productCreate extends Component {
         this.setState({ productImages: this.fileArray })
     }
 
-    handleSubmit = (e) => {
-        e.preventDefault();
+    handleSubmit = (event) => {
+        event.preventDefault();
         const xdata = {
             categoryId: this.state.paramid,
             name: this.state.productName,
+            quantity: this.state.productQuantity,
+            price: this.state.productPrice,
             colors: this.state.productColors,
             brands: this.state.productBrands,
             sizes: this.state.productSizes,
@@ -127,7 +135,7 @@ class productCreate extends Component {
                                     <h5 className="mb-0">Add new product</h5>
                                 </div>
                                 <div className="card-body py-4">
-                                    <h2>Producy Add {this.state.paramid}</h2>
+                                    {/* <h2>Producy Add {this.state.paramid}</h2> */}
                                     <form onSubmit={this.handleSubmit}>
                                         {/* Product Name */}
                                         <div className="form-group mb-3 mb-lg-4">
@@ -145,6 +153,15 @@ class productCreate extends Component {
                                                 className="form-control rounded-0 shadow-none"
                                                 placeholder="Enter Product Quantity"
                                                 onChange={this.onChangeInputQuantity} />
+                                        </div>
+
+                                        {/* Product Price */}
+                                        <div className="form-group mb-3 mb-lg-4">
+                                            <small className="text-muted">Product Price</small>
+                                            <input
+                                                className="form-control rounded-0 shadow-none"
+                                                placeholder="Enter Product Price"
+                                                onChange={this.onChangeInputPrice} />
                                         </div>
 
                                         {/* Product Color */}
