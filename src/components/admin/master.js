@@ -14,6 +14,8 @@ import CategoryEdit from './category/edit';
 // Product
 import ProductIndex from './product/index';
 import ProductCreate from './product/create';
+import ProductEdit from './product/edit';
+import ProductShow from './product/show';
 // Brand
 import BrandIndex from './brand/index';
 import BrandCreate from './brand/create';
@@ -162,6 +164,8 @@ class AdminMaster extends Component {
                             {/* Product Routes */}
                             <Route exact path="/admin/category/:id/products" component={ProductIndex} />
                             <Route exact path="/admin/category/:id/products/create" component={ProductCreate} />
+                            <Route exact path="/admin/product/:id/edit" component={ProductEdit} />
+                            <Route exact path="/admin/product/:id/show" component={ProductShow} />
                             {/* Brand Routes */}
                             <Route exact path="/admin/brands" component={BrandIndex} />
                             <Route exact path="/admin/brand/create" component={BrandCreate} />

@@ -58,3 +58,42 @@
 }
 
 /* End Product Create */
+
+/* Start Product Edit */
+
+/* Start Product Show */
+
+.product-show h5 {
+    font-size: 16px;
+    line-height: 1.5rem;
+    font-family: "Roubik-medium";
+}
+
+.product-show .brands p {
+    font-family: "Roubik-regular";
+}
+
+.product-show .brands ol li p {
+    font-size: 14px;
+    color: #720655;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+}
+
+.product-show .brands ul li {
+    list-style: none;
+}
+
+.product-show .details p {
+    font-size: 14px;
+    line-height: 1.5rem;
+    font-family: "Roubik-regular";
+}
+
+/* End Product Show */
+
+/* .edit-product{
+
+} */
+
+/* End Product Edit */

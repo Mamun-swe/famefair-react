@@ -9,10 +9,10 @@ class ProductIndex extends Component {
         super(props);
         this.state = {}
     }
-      
+
     render() {
         return (
-           
+
             <div className="product_index">
                 <div className="container-fluid">
                     <div className="row">
@@ -45,8 +45,8 @@ class ProductIndex extends Component {
                                         </td>
                                         <td className="text-left text-capitalize pt-3">name</td>
                                         <td className="text-center pt-3">
-                                            <button type="button" className="btn btn-sm btn-light rounded-0 shadow-none text-dark"><i className="fas fa-pen"></i></button>
-                                            <button type="button" className="btn btn-sm btn-light rounded-0 shadow-none text-info"><i className="fas fa-eye"></i></button>
+                                            <Link to={`/admin/product/${2}/edit`} type="button" className="btn btn-sm btn-light rounded-0 shadow-none text-dark"><i className="fas fa-pen"></i></Link>
+                                            <Link to={`/admin/product/${2}/show`} type="button" className="btn btn-sm btn-light rounded-0 shadow-none text-info"><i className="fas fa-eye"></i></Link>
                                             <button type="button" className="btn btn-sm btn-light rounded-0 shadow-none text-danger"><i className="fas fa-trash"></i></button>
                                         </td>
                                     </tr>
