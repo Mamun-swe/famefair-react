@@ -16,7 +16,7 @@ import Reset from './components/auth/reset';
 // Admin
 import AdminMaster from './components/admin/master';
 
-import NotFound from './components/pageNotFound/index';
+// import NotFound from './components/pageNotFound/index';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
@@ -41,8 +41,8 @@ function App() {
           {/* Admin Routes */}
           <Route path="/admin" component={AdminMaster} />
 
-          <Route component={NotFound} />
-          {/* <Route component={Home} /> */}
+          {/* <Route component={NotFound} /> */}
+          <Route component={Home} />
         </Switch>
       </Router>
 
