@@ -48,7 +48,7 @@ class Product extends Component {
                             </div>
                             <div className="products">
                                 {/* Repeat Product */}
-                                {/* {
+                                {
                                     posts.length ?
                                         posts.map(post =>
                                             <div className="card product-card" key={post.id}>
@@ -70,9 +70,9 @@ class Product extends Component {
                                             </div>
                                         ) :
                                         null
-                                } */}
+                                }
 
-                                <div className="card product-card">
+                                {/* <div className="card product-card">
                                     <div className="card-body">
                                         <div className="img-box">
                                             <img src={product_image_1} className="img-fluid" alt="Product" />
@@ -286,7 +286,7 @@ class Product extends Component {
                                             <Link to={`/product/${2}`} type="button" className="btn shadow-none">View</Link>
                                         </div>
                                     </div>
-                                </div>
+                                </div> */}
                                 {/* End Repeat Product */}
                             </div>
                         </div>
