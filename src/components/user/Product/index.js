@@ -48,7 +48,7 @@ class Product extends Component {
                             </div>
                             <div className="products">
                                 {/* Repeat Product */}
-                                {
+                                {/* {
                                     posts.length ?
                                         posts.map(post =>
                                             <div className="card product-card" key={post.id}>
@@ -70,7 +70,223 @@ class Product extends Component {
                                             </div>
                                         ) :
                                         null
-                                }
+                                } */}
+
+                                <div className="card product-card">
+                                    <div className="card-body">
+                                        <div className="img-box">
+                                            <img src={product_image_1} className="img-fluid" alt="Product" />
+                                            <div className="product-overlay">
+                                                <div className="flex-center flex-column">
+                                                    <button className="btn product-btn shadow-none">Add to cart</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="card-content p-2">
+                                            <p className="mb-1 text-capitalize name">Name</p>
+                                            <p className="mb-2 price">220tk</p>
+                                            <Link to={`/product/${2}`} type="button" className="btn shadow-none">View</Link>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="card product-card">
+                                    <div className="card-body">
+                                        <div className="img-box">
+                                            <img src={product_image_1} className="img-fluid" alt="Product" />
+                                            <div className="product-overlay">
+                                                <div className="flex-center flex-column">
+                                                    <button className="btn product-btn shadow-none">Add to cart</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="card-content p-2">
+                                            <p className="mb-1 text-capitalize name">Name</p>
+                                            <p className="mb-2 price">220tk</p>
+                                            <Link to={`/product/${2}`} type="button" className="btn shadow-none">View</Link>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="card product-card">
+                                    <div className="card-body">
+                                        <div className="img-box">
+                                            <img src={product_image_1} className="img-fluid" alt="Product" />
+                                            <div className="product-overlay">
+                                                <div className="flex-center flex-column">
+                                                    <button className="btn product-btn shadow-none">Add to cart</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="card-content p-2">
+                                            <p className="mb-1 text-capitalize name">Name</p>
+                                            <p className="mb-2 price">220tk</p>
+                                            <Link to={`/product/${2}`} type="button" className="btn shadow-none">View</Link>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="card product-card">
+                                    <div className="card-body">
+                                        <div className="img-box">
+                                            <img src={product_image_1} className="img-fluid" alt="Product" />
+                                            <div className="product-overlay">
+                                                <div className="flex-center flex-column">
+                                                    <button className="btn product-btn shadow-none">Add to cart</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="card-content p-2">
+                                            <p className="mb-1 text-capitalize name">Name</p>
+                                            <p className="mb-2 price">220tk</p>
+                                            <Link to={`/product/${2}`} type="button" className="btn shadow-none">View</Link>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="card product-card">
+                                    <div className="card-body">
+                                        <div className="img-box">
+                                            <img src={product_image_1} className="img-fluid" alt="Product" />
+                                            <div className="product-overlay">
+                                                <div className="flex-center flex-column">
+                                                    <button className="btn product-btn shadow-none">Add to cart</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="card-content p-2">
+                                            <p className="mb-1 text-capitalize name">Name</p>
+                                            <p className="mb-2 price">220tk</p>
+                                            <Link to={`/product/${2}`} type="button" className="btn shadow-none">View</Link>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="card product-card">
+                                    <div className="card-body">
+                                        <div className="img-box">
+                                            <img src={product_image_1} className="img-fluid" alt="Product" />
+                                            <div className="product-overlay">
+                                                <div className="flex-center flex-column">
+                                                    <button className="btn product-btn shadow-none">Add to cart</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="card-content p-2">
+                                            <p className="mb-1 text-capitalize name">Name</p>
+                                            <p className="mb-2 price">220tk</p>
+                                            <Link to={`/product/${2}`} type="button" className="btn shadow-none">View</Link>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="card product-card">
+                                    <div className="card-body">
+                                        <div className="img-box">
+                                            <img src={product_image_1} className="img-fluid" alt="Product" />
+                                            <div className="product-overlay">
+                                                <div className="flex-center flex-column">
+                                                    <button className="btn product-btn shadow-none">Add to cart</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="card-content p-2">
+                                            <p className="mb-1 text-capitalize name">Name</p>
+                                            <p className="mb-2 price">220tk</p>
+                                            <Link to={`/product/${2}`} type="button" className="btn shadow-none">View</Link>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="card product-card">
+                                    <div className="card-body">
+                                        <div className="img-box">
+                                            <img src={product_image_1} className="img-fluid" alt="Product" />
+                                            <div className="product-overlay">
+                                                <div className="flex-center flex-column">
+                                                    <button className="btn product-btn shadow-none">Add to cart</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="card-content p-2">
+                                            <p className="mb-1 text-capitalize name">Name</p>
+                                            <p className="mb-2 price">220tk</p>
+                                            <Link to={`/product/${2}`} type="button" className="btn shadow-none">View</Link>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="card product-card">
+                                    <div className="card-body">
+                                        <div className="img-box">
+                                            <img src={product_image_1} className="img-fluid" alt="Product" />
+                                            <div className="product-overlay">
+                                                <div className="flex-center flex-column">
+                                                    <button className="btn product-btn shadow-none">Add to cart</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="card-content p-2">
+                                            <p className="mb-1 text-capitalize name">Name</p>
+                                            <p className="mb-2 price">220tk</p>
+                                            <Link to={`/product/${2}`} type="button" className="btn shadow-none">View</Link>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="card product-card">
+                                    <div className="card-body">
+                                        <div className="img-box">
+                                            <img src={product_image_1} className="img-fluid" alt="Product" />
+                                            <div className="product-overlay">
+                                                <div className="flex-center flex-column">
+                                                    <button className="btn product-btn shadow-none">Add to cart</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="card-content p-2">
+                                            <p className="mb-1 text-capitalize name">Name</p>
+                                            <p className="mb-2 price">220tk</p>
+                                            <Link to={`/product/${2}`} type="button" className="btn shadow-none">View</Link>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="card product-card">
+                                    <div className="card-body">
+                                        <div className="img-box">
+                                            <img src={product_image_1} className="img-fluid" alt="Product" />
+                                            <div className="product-overlay">
+                                                <div className="flex-center flex-column">
+                                                    <button className="btn product-btn shadow-none">Add to cart</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="card-content p-2">
+                                            <p className="mb-1 text-capitalize name">Name</p>
+                                            <p className="mb-2 price">220tk</p>
+                                            <Link to={`/product/${2}`} type="button" className="btn shadow-none">View</Link>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="card product-card">
+                                    <div className="card-body">
+                                        <div className="img-box">
+                                            <img src={product_image_1} className="img-fluid" alt="Product" />
+                                            <div className="product-overlay">
+                                                <div className="flex-center flex-column">
+                                                    <button className="btn product-btn shadow-none">Add to cart</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="card-content p-2">
+                                            <p className="mb-1 text-capitalize name">Name</p>
+                                            <p className="mb-2 price">220tk</p>
+                                            <Link to={`/product/${2}`} type="button" className="btn shadow-none">View</Link>
+                                        </div>
+                                    </div>
+                                </div>
                                 {/* End Repeat Product */}
                             </div>
                         </div>
