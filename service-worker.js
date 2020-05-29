@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/famefair-react/precache-manifest.c2aa387ffd4981aefd5f91c7a095d6db.js"
+  "/famefair-react/precache-manifest.e676254e4dd7c6d088feca23a920598f.js"
 );
 
 self.addEventListener('message', (event) => {
