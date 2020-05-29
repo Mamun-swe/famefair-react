@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a8afcd52ab17578c7d949498b324d86b",
+    "revision": "2a31b5aa4ad7c5e790d6d8b01583a8f6",
     "url": "/famefair-react/index.html"
   },
   {
-    "revision": "cb58f8652cd4d5f2bc9b",
+    "revision": "98c32caeecb6b7ed70c5",
     "url": "/famefair-react/static/css/2.331ca8a7.chunk.css"
   },
   {
-    "revision": "4e84231a7b551aa2b263",
+    "revision": "2a3d13ad556040cc339f",
     "url": "/famefair-react/static/css/main.e7377ac8.chunk.css"
   },
   {
-    "revision": "cb58f8652cd4d5f2bc9b",
-    "url": "/famefair-react/static/js/2.926e7d10.chunk.js"
+    "revision": "98c32caeecb6b7ed70c5",
+    "url": "/famefair-react/static/js/2.dc4b3ea9.chunk.js"
   },
   {
     "revision": "9e8f0531ef4317a9b68b3232a29209ea",
-    "url": "/famefair-react/static/js/2.926e7d10.chunk.js.LICENSE.txt"
+    "url": "/famefair-react/static/js/2.dc4b3ea9.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4e84231a7b551aa2b263",
-    "url": "/famefair-react/static/js/main.ab624c04.chunk.js"
+    "revision": "2a3d13ad556040cc339f",
+    "url": "/famefair-react/static/js/main.c6074856.chunk.js"
   },
   {
     "revision": "97f6140098e6c47021ad",
