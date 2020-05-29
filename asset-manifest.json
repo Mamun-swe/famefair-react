@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/famefair-react/static/css/main.e7377ac8.chunk.css",
-    "main.js": "/famefair-react/static/js/main.24875b32.chunk.js",
-    "main.js.map": "/famefair-react/static/js/main.24875b32.chunk.js.map",
+    "main.js": "/famefair-react/static/js/main.756de96a.chunk.js",
+    "main.js.map": "/famefair-react/static/js/main.756de96a.chunk.js.map",
     "runtime-main.js": "/famefair-react/static/js/runtime-main.66ac2f67.js",
     "runtime-main.js.map": "/famefair-react/static/js/runtime-main.66ac2f67.js.map",
     "static/css/2.331ca8a7.chunk.css": "/famefair-react/static/css/2.331ca8a7.chunk.css",
     "static/js/2.74312a67.chunk.js": "/famefair-react/static/js/2.74312a67.chunk.js",
     "static/js/2.74312a67.chunk.js.map": "/famefair-react/static/js/2.74312a67.chunk.js.map",
     "index.html": "/famefair-react/index.html",
-    "precache-manifest.ebfd4644bde2835d400ef302d0d73c65.js": "/famefair-react/precache-manifest.ebfd4644bde2835d400ef302d0d73c65.js",
+    "precache-manifest.c2aa387ffd4981aefd5f91c7a095d6db.js": "/famefair-react/precache-manifest.c2aa387ffd4981aefd5f91c7a095d6db.js",
     "service-worker.js": "/famefair-react/service-worker.js",
     "static/css/2.331ca8a7.chunk.css.map": "/famefair-react/static/css/2.331ca8a7.chunk.css.map",
     "static/css/main.e7377ac8.chunk.css.map": "/famefair-react/static/css/main.e7377ac8.chunk.css.map",
@@ -36,6 +36,6 @@
     "static/css/2.331ca8a7.chunk.css",
     "static/js/2.74312a67.chunk.js",
     "static/css/main.e7377ac8.chunk.css",
-    "static/js/main.24875b32.chunk.js"
+    "static/js/main.756de96a.chunk.js"
   ]
 }

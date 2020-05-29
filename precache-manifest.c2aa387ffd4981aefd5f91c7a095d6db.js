@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ed17b2a7e70e1d2e0a52e27b94cb6ce2",
+    "revision": "54788ddf4a2d152d3f1f93f69854bd29",
     "url": "/famefair-react/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/famefair-react/static/css/2.331ca8a7.chunk.css"
   },
   {
-    "revision": "570a2983e613160f9f2f",
+    "revision": "52c9ec33d55ddd165ce2",
     "url": "/famefair-react/static/css/main.e7377ac8.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/famefair-react/static/js/2.74312a67.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "570a2983e613160f9f2f",
-    "url": "/famefair-react/static/js/main.24875b32.chunk.js"
+    "revision": "52c9ec33d55ddd165ce2",
+    "url": "/famefair-react/static/js/main.756de96a.chunk.js"
   },
   {
     "revision": "97f6140098e6c47021ad",
