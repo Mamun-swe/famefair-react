@@ -1,22 +1,22 @@
 import React from 'react';
 import './App.css';
 
-import Home from './components/user/Home/index';
-import ProductShow from './components/user/Product/show';
-import Category from './components/user/category/index';
-import Cart from './components/user/cart/index';
-import Checkout from './components/user/checkout/index';
-import Account from './components/user/account/master';
+import Home from './pages/user/Home/index';
+import ProductShow from './pages/user/Product/show';
+import Category from './pages/user/category/index';
+import Cart from './pages/user/cart/index';
+import Checkout from './pages/user/checkout/index';
+import Account from './pages/user/account/master';
 
 // Auth
-import Login from './components/auth/login';
-import Register from './components/auth/register';
-import Reset from './components/auth/reset';
+import Login from './pages/auth/login';
+import Register from './pages/auth/register';
+import Reset from './pages/auth/reset';
 
 // Admin
-import AdminMaster from './components/admin/master';
+import AdminMaster from './pages/admin/master';
 
-import NotFound from './components/pageNotFound/index';
+import NotFound from './pages/pageNotFound/index';
 // import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { HashRouter as Router, Switch, Route } from "react-router-dom";
 

@@ -1,4 +1,6 @@
-import React, { Component } from 'react';
+
+import React from 'react';
+
 import './master.css';
 
 import Navbar from '../../product_nav/index';
@@ -7,15 +9,9 @@ import Me from './me/index';
 import Password from './password/index';
 
 import { Switch, Route, NavLink } from "react-router-dom";
-
-
-class AccountMaster extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {}
-    }
-    render() {
-        return (
+const Master = () => {
+    return (
+        <div>
             <div>
                 <Navbar />
                 <div className="mt-lg-5 pt-3 pt-lg-5">
@@ -46,8 +42,8 @@ class AccountMaster extends Component {
                     <Route exact path="/account/change-password" component={Password} />
                 </Switch>
             </div>
-        );
-    }
-}
+        </div>
+    );
+};
 
-export default AccountMaster;
+export default Master;

@@ -6,7 +6,6 @@ import ShowMoreText from 'react-show-more-text';
 import axios from 'axios'
 import { Link } from 'react-router-dom';
 
-
 import image from '../../../assets/products/9.png';
 import user from '../../../assets/static/user.jpg';
 import product_image_1 from '../../../assets/products/8.png';
